@@ -312,7 +312,7 @@ header {
 }
 
 .sidebar-navigation .social-icons li a:hover {
-  color: #45489a;
+  color: #18baa2;
 }
 
 
@@ -858,6 +858,11 @@ header {
   padding: 80px 60px;
 }
 
+#contact .row {
+  display: flex;
+  justify-content: center;
+}
+
 #contact input {
   border-radius: 0px;
   padding-left: 15px;
@@ -908,7 +913,11 @@ header {
   transition: all 0.3s;
 }
 
-#contact button:hover {
+#contact a {
+  color: #fff;
+}
+
+#contact button:hover, #contact a:hover {
   color: #232323;
   background-color: #f4f4f4;
 }
@@ -919,28 +928,39 @@ header {
 
 .footer {
   background-color: rgba(12,12,12,0.9);
-  height: 80px;
+  height: auto;
   line-height: 80px;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
-.footer p {
+/*.footer p {
   margin-bottom: 0px;
   font-size: 13px;
   line-height: 80px;
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 300;
-}
+}*/
 
-.footer p a {
-  text-decoration: none;
-  color: #fff;
+.footer a {
   font-weight: 600;
 }
 
+.footer a:hover {
+  color: #18baa2;
+}
+
+.footer span, .footer strong {
+  color: #fff;
+}
+
+.footer img {
+  width: 121px;
+  height: 150px;
+}
 
 
 /* Responsive Style */
@@ -1028,7 +1048,9 @@ header {
     z-index:5;
   }
 
-  
+  .footer{
+    flex-direction: column;
+  }
 
 }
 
