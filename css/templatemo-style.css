@@ -1108,3 +1108,9 @@ header {
   }
 
 }
+
+@media (max-width: 375px) {
+  .section-heading h1 {
+    font-size: 26px;
+  }
+}
