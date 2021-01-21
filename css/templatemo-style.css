@@ -595,7 +595,9 @@ header {
   margin-bottom: 12.5px;
 }
 
-
+.text-content span {
+  font-style: italic;
+}
 
 /* Projects Style */
 
